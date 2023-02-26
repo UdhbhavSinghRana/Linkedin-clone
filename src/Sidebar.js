@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Sidebar() {
   return (
-    <div>
-    <div className='flex flex-col w-3/5 shadow-md rounded-b-lg rounded-t-lg bg-white'>
+    <div className=''>
+    <div className='flex flex-col  shadow-md rounded-b-lg rounded-t-lg bg-white'>
     <div className=" flex flex-col items-center border-b-2 border-slate-100 rounded-t-lg ">
         <div className='-mb-10'><img src='https://media.istockphoto.com/id/1179822347/photo/watercolor-painting-background.jpg?b=1&s=170667a&w=0&k=20&c=pNNHX92Y_xhw-xd0YFPJyI60q-EAICkr73_RXzKNBXM=' className='rounded-t-lg h-20 w-96'></img></div>
         <div className='w-16'><img src='https://cdn-icons-png.flaticon.com/512/149/149071.png'></img></div>
@@ -19,7 +19,7 @@ export default function Sidebar() {
             </div>
         </div>
     </div>
-    <div className='flex flex-col w-3/5 shadow-md rounded-b-lg rounded-t-lg my-2 bg-white'>
+    <div className='flex flex-col  shadow-md rounded-b-lg rounded-t-lg my-2 bg-white'>
         <div className='rounded-t-lg border-t-2'> 
         <div className='text-md  px-2 py-2 font-semibold text-zinc-500'> 
             Recent
