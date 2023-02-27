@@ -1,7 +1,9 @@
 import React from 'react'
+import Post from './Post'
 
 function content() {
   return (
+    <div>
     <div className='flex flex-col justify-center border-2 rounded-xl bg-white py-2 px-2 '>
         <div className='flex'>
             <img src='https://cdn-icons-png.flaticon.com/512/149/149071.png' className='h-12 py-1 px-2'></img>
@@ -28,6 +30,13 @@ function content() {
             </div>
         </div>
         </div>
+    </div>
+    <strong><hr className='my-4'></hr></strong>
+
+    <div className='flex flex-col justify-center border-2 rounded-xl bg-white py-2 px-2 mt-2'> 
+    <Post />
+    </div>
+
     </div>
   )
 }
