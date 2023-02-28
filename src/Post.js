@@ -1,22 +1,27 @@
 import React from 'react'
 
-function Post({photo,Name,desc}) {
+function Post({photo,Name,desc,time}) {
   return (
-    <div >
+    <div className=''>
         <div className='flex justify-start'>
             <div className='flex '>
                 <img src='https://cdn-icons-png.flaticon.com/512/149/149071.png' className='h-12 '></img>
                 <div className='flex flex-col '>
-                    <div className='pl-2 font-semibold text-gray-800'>Udhbhav Rana</div>
+                    <div className='pl-2 font-semibold text-gray-800'>{Name}</div>
                     <div className='pl-2  text-gray-800 text-xs'>68,323 Followers</div>
-                    <div className='pl-2  text-gray-800 text-xs'>2w</div>
+                    <div className='pl-2  text-gray-800 text-xs'>{time}</div>
                 </div>
             </div>
         </div>
         <div className='text-sm pt-2 pl-2'>
-        A National Seminar on “Systematic Literature Review” for architecture faculty and students was organised with the objective to develop the expertise in conducting quality research. Research being a building block that can find answers to things that are unknown, helps to fill gaps in knowledge and change ways of thinking.
+        {desc}
+        <div className='py-2'>
+        <img src={photo} className=""></img>
         </div>
-        <div className='flex justify-around pt-4'>
+        </div>
+        <hr className='mt-2'></hr>
+
+        <div className='flex justify-around pt-1'>
             <div className='flex items-center px-2 hover:bg-zinc-100 h-12 hover:rounded-md transition ease-in-out'>
                 <img src='https://cdn-icons-png.flaticon.com/512/126/126473.png' className='h-7'></img>
                 <div className='pl-2'>Likes</div>
@@ -35,6 +40,7 @@ function Post({photo,Name,desc}) {
             </div>
         </div>
     </div>
+    
   )
 }
 
