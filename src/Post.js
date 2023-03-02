@@ -24,19 +24,19 @@ function Post({photo,Name,desc,time}) {
         <div className='flex justify-around pt-1'>
             <div className='flex items-center px-2 hover:bg-zinc-100 h-12 hover:rounded-md transition ease-in-out'>
                 <img src='https://cdn-icons-png.flaticon.com/512/126/126473.png' className='h-7'></img>
-                <div className='pl-2'>Likes</div>
+                <div className='hidden lg:pl-2 lg:block' >Likes</div>
             </div>
             <div className='flex items-center px-2 hover:bg-zinc-100 h-12 hover:rounded-md transition ease-in-out'>
                 <img src='https://cdn-icons-png.flaticon.com/512/1380/1380338.png' className='h-7'></img>
-                <div className='pl-2'>Comments</div>
+                <div className='hidden lg:pl-2 lg:block'>Comments</div>
             </div>
             <div className='flex items-center px-2 hover:bg-zinc-100 h-12 hover:rounded-md transition ease-in-out'>
                 <img src='https://cdn-icons-png.flaticon.com/512/1358/1358023.png' className='h-7'></img>
-                <div className='pl-2'>Share</div>
+                <div className='hidden lg:pl-2 lg:block'>Share</div>
             </div>
             <div className='flex items-center px-2 hover:bg-zinc-100 h-12 hover:rounded-md transition ease-in-out'>
                 <img src='https://cdn-icons-png.flaticon.com/512/786/786205.png' className='h-7'></img>
-                <div className='pl-2'>Send</div>
+                <div className='hidden lg:pl-2 lg:block'>Send</div>
             </div>
         </div>
     </div>
